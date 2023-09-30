@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_abcceb1deea564e84d906f461f61ac42 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_abcceb1deea564e84d906f461f61ac42" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_abcceb1deea564e84d906f461f61ac42 = L.map(
+                "map_abcceb1deea564e84d906f461f61ac42",
+                {
+                    center: [51.5074, -0.1278],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d68291796052e8e67a35fc1b6c4b4feb = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+            var marker_0549ec2bbd9fbf3d0c74a8fda0080bc2 = L.marker(
+                [45.4641, 9.1919],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_1cd3ab48a2f38a9327e8ce30df547751 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36a4870fa4c8253af6512629b2435441 = $(`<div id="html_36a4870fa4c8253af6512629b2435441" style="width: 100.0%; height: 100.0%;"> <h4>Milan</h4> <p>Lorem ipsum dolcet ....</p> </div>`)[0];
+                popup_1cd3ab48a2f38a9327e8ce30df547751.setContent(html_36a4870fa4c8253af6512629b2435441);
+            
+        
+
+        marker_0549ec2bbd9fbf3d0c74a8fda0080bc2.bindPopup(popup_1cd3ab48a2f38a9327e8ce30df547751)
+        ;
+
+        
+    
+    
+            var marker_dfc28936b6d8a4a7d16e2bd296ba327a = L.marker(
+                [51.5072, 0.1276],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_4f5986717936074c5b395dc19ab1736d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_062419b2d59ad9426bc13741ba89d534 = $(`<div id="html_062419b2d59ad9426bc13741ba89d534" style="width: 100.0%; height: 100.0%;"> <h4>London</h4> <p>Lorem ipsum dolcet  ....</p> </div>`)[0];
+                popup_4f5986717936074c5b395dc19ab1736d.setContent(html_062419b2d59ad9426bc13741ba89d534);
+            
+        
+
+        marker_dfc28936b6d8a4a7d16e2bd296ba327a.bindPopup(popup_4f5986717936074c5b395dc19ab1736d)
+        ;
+
+        
+    
+    
+            var marker_05c00e7825c84f745beef5e6348435ba = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_6cf720ac93e4cc5d7985b0c4614d63a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b2e0a239b554099517d4a22ebcdc723 = $(`<div id="html_9b2e0a239b554099517d4a22ebcdc723" style="width: 100.0%; height: 100.0%;"> <h4>Rome</h4> <p>Lorem ipsum dolcet  ....</p> </div>`)[0];
+                popup_6cf720ac93e4cc5d7985b0c4614d63a5.setContent(html_9b2e0a239b554099517d4a22ebcdc723);
+            
+        
+
+        marker_05c00e7825c84f745beef5e6348435ba.bindPopup(popup_6cf720ac93e4cc5d7985b0c4614d63a5)
+        ;
+
+        
+    
+    
+            var marker_7e721f97504f753bc541f8bc83c51973 = L.marker(
+                [46.1616, 8.775],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_4495240143d04973281c145d34fa44d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57ee4aa0ba56f89312afafff2bbcb189 = $(`<div id="html_57ee4aa0ba56f89312afafff2bbcb189" style="width: 100.0%; height: 100.0%;"> <h4>Ascona</h4> <p>Lorem ipsum dolcet  ....</p> </div>`)[0];
+                popup_4495240143d04973281c145d34fa44d4.setContent(html_57ee4aa0ba56f89312afafff2bbcb189);
+            
+        
+
+        marker_7e721f97504f753bc541f8bc83c51973.bindPopup(popup_4495240143d04973281c145d34fa44d4)
+        ;
+
+        
+    
+    
+            var marker_22ad067b38f84370ddf4eb3d6cb1475e = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_258e09e406641f6974bb18210ada82c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89042c19db7230e7fce05d35a831b7f3 = $(`<div id="html_89042c19db7230e7fce05d35a831b7f3" style="width: 100.0%; height: 100.0%;"> <h4>Paris</h4> <p>Lorem ipsum dolcet  ....</p> </div>`)[0];
+                popup_258e09e406641f6974bb18210ada82c6.setContent(html_89042c19db7230e7fce05d35a831b7f3);
+            
+        
+
+        marker_22ad067b38f84370ddf4eb3d6cb1475e.bindPopup(popup_258e09e406641f6974bb18210ada82c6)
+        ;
+
+        
+    
+    
+            var marker_b3dbd7104df6c0e1740e9073e5625611 = L.marker(
+                [52.52, 13.405],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_7cd8ceb16f94b822fd3a58a68259ab09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55c4a2ae757b9cb18e3f79f1b61b4bd5 = $(`<div id="html_55c4a2ae757b9cb18e3f79f1b61b4bd5" style="width: 100.0%; height: 100.0%;"> <h4>Berlin</h4> <p>Lorem ipsum dolcet  ....</p> </div>`)[0];
+                popup_7cd8ceb16f94b822fd3a58a68259ab09.setContent(html_55c4a2ae757b9cb18e3f79f1b61b4bd5);
+            
+        
+
+        marker_b3dbd7104df6c0e1740e9073e5625611.bindPopup(popup_7cd8ceb16f94b822fd3a58a68259ab09)
+        ;
+
+        
+    
+    
+            var marker_0757eb21ff796d47036282d917d719a3 = L.marker(
+                [52.2297, 21.0122],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_d2bac7448ec33594698f32b185c80fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1955687308ff3c73c6662019c54b470 = $(`<div id="html_f1955687308ff3c73c6662019c54b470" style="width: 100.0%; height: 100.0%;"> <h4>Warsaw</h4> <p>Lorem ipsum dolcet  ....</p> </div>`)[0];
+                popup_d2bac7448ec33594698f32b185c80fd9.setContent(html_f1955687308ff3c73c6662019c54b470);
+            
+        
+
+        marker_0757eb21ff796d47036282d917d719a3.bindPopup(popup_d2bac7448ec33594698f32b185c80fd9)
+        ;
+
+        
+    
+    
+            var marker_21cd666e2142bcae7bfa4b8a58ac8e3a = L.marker(
+                [40.4168, 3.7038],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_4a6bba2464cfe1f6cc176178ec9b2a6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a77ff8f07eba51608bf72975077fa43 = $(`<div id="html_4a77ff8f07eba51608bf72975077fa43" style="width: 100.0%; height: 100.0%;"> <h4>Madrid</h4> <p>Lorem ipsum dolcet  ....</p> </div>`)[0];
+                popup_4a6bba2464cfe1f6cc176178ec9b2a6a.setContent(html_4a77ff8f07eba51608bf72975077fa43);
+            
+        
+
+        marker_21cd666e2142bcae7bfa4b8a58ac8e3a.bindPopup(popup_4a6bba2464cfe1f6cc176178ec9b2a6a)
+        ;
+
+        
+    
+    
+            var marker_b0fc25d776bf3fae9136297c6e9d3c1a = L.marker(
+                [59.3293, 18.0686],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_e23fd0400e79eb4a6cf0f15c0863bb38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba89e10b238602b4c3e2a7eafe795970 = $(`<div id="html_ba89e10b238602b4c3e2a7eafe795970" style="width: 100.0%; height: 100.0%;"> <h4>Stockholm</h4> <p>Lorem ipsum dolcet  ....</p> </div>`)[0];
+                popup_e23fd0400e79eb4a6cf0f15c0863bb38.setContent(html_ba89e10b238602b4c3e2a7eafe795970);
+            
+        
+
+        marker_b0fc25d776bf3fae9136297c6e9d3c1a.bindPopup(popup_e23fd0400e79eb4a6cf0f15c0863bb38)
+        ;
+
+        
+    
+    
+            var marker_bce7f4be18cfea2059589a38e09c8f41 = L.marker(
+                [55.6761, 12.5683],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_1cdbe2eb664c8b43e3dfa4bc5e018055 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d139d1d12cf89a1a54acca66627129b8 = $(`<div id="html_d139d1d12cf89a1a54acca66627129b8" style="width: 100.0%; height: 100.0%;"> <h4>Copenhagen</h4> <p>This is the city where ....</p> </div>`)[0];
+                popup_1cdbe2eb664c8b43e3dfa4bc5e018055.setContent(html_d139d1d12cf89a1a54acca66627129b8);
+            
+        
+
+        marker_bce7f4be18cfea2059589a38e09c8f41.bindPopup(popup_1cdbe2eb664c8b43e3dfa4bc5e018055)
+        ;
+
+        
+    
+    
+            var marker_660733ec5b03fc25949cee07c07d0eae = L.marker(
+                [59.9139, 10.7522],
+                {}
+            ).addTo(map_abcceb1deea564e84d906f461f61ac42);
+        
+    
+        var popup_c664e2c174abfdd84378ac65f228db53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ec9cfe2cd3a2952306823b1807ca6d1 = $(`<div id="html_2ec9cfe2cd3a2952306823b1807ca6d1" style="width: 100.0%; height: 100.0%;"> <h4>Copenhagen</h4> <p>This is the city where ....</p> </div>`)[0];
+                popup_c664e2c174abfdd84378ac65f228db53.setContent(html_2ec9cfe2cd3a2952306823b1807ca6d1);
+            
+        
+
+        marker_660733ec5b03fc25949cee07c07d0eae.bindPopup(popup_c664e2c174abfdd84378ac65f228db53)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>  
     
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
         <script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
         </script>
     
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+        <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+        <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
-            <meta name="viewport" content="width=device-width,
+        <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_abcceb1deea564e84d906f461f61ac42 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
+        <style>
+            #map_abcceb1deea564e84d906f461f61ac42 {
+                position: relative;
+                width: 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
                 }
-                .leaflet-container { font-size: 1rem; }
-            </style>
+            .leaflet-container { font-size: 1rem; }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="map.css" />
         
 </head>
 <body>
-    
-    
-            <div class="folium-map" id="map_abcceb1deea564e84d906f461f61ac42" ></div>
+        <div class ="site-head">
+            <h1 >Map</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+        <br>
+        <div class="folium-map" id="map_abcceb1deea564e84d906f461f61ac42" ></div>
+        <div id="footer">
+            <p class="body-footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
         
 </body>
 <script>
     
     
-            var map_abcceb1deea564e84d906f461f61ac42 = L.map(
-                "map_abcceb1deea564e84d906f461f61ac42",
-                {
-                    center: [51.5074, -0.1278],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 6,
-                    zoomControl: true,
-                    preferCanvas: false,
+        var map_abcceb1deea564e84d906f461f61ac42 = L.map(
+            "map_abcceb1deea564e84d906f461f61ac42",
+            {
+                center: [51.5074, -0.1278],
+                crs: L.CRS.EPSG3857,
+                zoom: 6,
+                zoomControl: true,
+                preferCanvas: false,
                 }
             );
 
@@ -60,13 +70,13 @@
 
         
     
-            var tile_layer_d68291796052e8e67a35fc1b6c4b4feb = L.tileLayer(
+        var tile_layer_d68291796052e8e67a35fc1b6c4b4feb = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             ).addTo(map_abcceb1deea564e84d906f461f61ac42);
         
     
-            var marker_0549ec2bbd9fbf3d0c74a8fda0080bc2 = L.marker(
+        var marker_0549ec2bbd9fbf3d0c74a8fda0080bc2 = L.marker(
                 [45.4641, 9.1919],
                 {}
             ).addTo(map_abcceb1deea564e84d906f461f61ac42);
@@ -76,8 +86,8 @@
 
         
             
-                var html_36a4870fa4c8253af6512629b2435441 = $(`<div id="html_36a4870fa4c8253af6512629b2435441" style="width: 100.0%; height: 100.0%;"> <h4>Milan</h4> <p>Lorem ipsum dolcet ....</p> </div>`)[0];
-                popup_1cd3ab48a2f38a9327e8ce30df547751.setContent(html_36a4870fa4c8253af6512629b2435441);
+        var html_36a4870fa4c8253af6512629b2435441 = $(`<div id="html_36a4870fa4c8253af6512629b2435441" style="width: 100.0%; height: 100.0%;"> <h4>Milan</h4> <p>Lorem ipsum dolcet ....</p> </div>`)[0];
+            popup_1cd3ab48a2f38a9327e8ce30df547751.setContent(html_36a4870fa4c8253af6512629b2435441);
             
         
 
@@ -87,7 +97,7 @@
         
     
     
-            var marker_dfc28936b6d8a4a7d16e2bd296ba327a = L.marker(
+        var marker_dfc28936b6d8a4a7d16e2bd296ba327a = L.marker(
                 [51.5072, 0.1276],
                 {}
             ).addTo(map_abcceb1deea564e84d906f461f61ac42);
@@ -265,7 +275,7 @@
 
         
             
-                var html_d139d1d12cf89a1a54acca66627129b8 = $(`<div id="html_d139d1d12cf89a1a54acca66627129b8" style="width: 100.0%; height: 100.0%;"> <h4>Copenhagen</h4> <p>This is the city where ....</p> </div>`)[0];
+                var html_d139d1d12cf89a1a54acca66627129b8 = $(`<div id="html_d139d1d12cf89a1a54acca66627129b8" style="width: 100.0%; height: 100.0%;"> <h4>Copenhagen</h4> <p>This is the city where ....</p> <img src="index.jpeg"> </div>`)[0];
                 popup_1cdbe2eb664c8b43e3dfa4bc5e018055.setContent(html_d139d1d12cf89a1a54acca66627129b8);
             
         
